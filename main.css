@@ -1,0 +1,21 @@
+.carousel-3d-slide {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.carousel-3d-slide.current figure {
+    opacity: 1 !important;
+    transition: 0.3s ease;
+}
+.carousel-3d-slide:not(.current) figure {
+    opacity: 0.5 !important;
+    transition: 0.3s ease;
+}
+
+.carousel-3d-slide figure p {
+    text-align: center;
+}
+
+.carousel-3d-controls {
+    display: none;
+}

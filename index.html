@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Timeshuffle Slider</title>
+  </head>
+  <body>
+    <!-- 3d Carousel -->
+    <div id="example">
+        <carousel-3d :controls-visible="true" :display="5" :width="500" :height="650" :clickable="false" :space="600" :perspective="50">
+            <slide v-for="(slide, i) in slides" :index="i">
+                <figure>
+                    <img src="./img/genesis-card--gold.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus placeat alias nam vel vitae sint velit magnam? Quas voluptate vitae quisquam eveniet dolore dignissimos blanditiis!</p>
+                </figure>
+            </slide>
+        </carousel-3d>
+    </div>
+
+    <!-- Slidejs with Motionpath GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-carousel-3d@1.0.1/dist/carousel-3d.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
